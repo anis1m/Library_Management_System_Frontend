@@ -5,13 +5,14 @@ import "./App.css";
 import { PrimeReactProvider } from "primereact/api";
 import "primereact/resources/themes/lara-light-cyan/theme.css";
 import "primeicons/primeicons.css";
+import Login from "./Components/Login";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <PrimeReactProvider>
-      <div></div>
+      <Login />
     </PrimeReactProvider>
   );
 }
