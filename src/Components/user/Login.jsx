@@ -14,7 +14,10 @@ const Login = () => {
       <form method="post" className="space-y-4">
         {/* Username */}
         <div>
-          <label htmlFor="username" className="block text-gray-700 text-sm font-medium">
+          <label
+            htmlFor="username"
+            className="block text-gray-700 text-sm font-medium"
+          >
             Username
           </label>
           <InputText
@@ -27,7 +30,10 @@ const Login = () => {
 
         {/* Password */}
         <div>
-          <label htmlFor="password" className="block text-gray-700 text-sm font-medium">
+          <label
+            htmlFor="password"
+            className="block text-gray-700 text-sm font-medium"
+          >
             Password
           </label>
           <div className="w-full">
@@ -43,19 +49,17 @@ const Login = () => {
         </div>
 
         {/* Submit Button */}
-        <div className="text-center mt-2">
-          <Button
-            label="Login"
-            type="button"
-            className="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-md text-sm"
-          />
-        </div>
+        <Button
+          label="Login"
+          type="button"
+          className="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-md"
+        />
 
         {/* Register Message */}
         <p className="text-center text-gray-600 text-sm mt-3">
           Don't have an account?{" "}
           <Link to={"/register"}>
-          <span className="text-blue-500">Register here</span>
+            <span className="text-blue-500">Register here</span>
           </Link>
         </p>
       </form>
